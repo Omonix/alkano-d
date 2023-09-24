@@ -2,7 +2,10 @@
 
 * {
   font-family: Croissant One;
-  transition-duration: 600ms;
+  transition-duration: 300ms;
+}
+a {
+  text-decoration: none;
 }
 body {
   background-color: blue;
@@ -41,6 +44,12 @@ button {
 .logo {
   height: 10em;
 }
+#dark .logo {
+  opacity: 60%;
+}
+#light .logo {
+  opacity: 100%;
+}
 .switch {
   display: flex;
   align-items: center;
@@ -68,11 +77,10 @@ button {
 }
 #light .header {
   border-bottom: solid 0.25em #2c0130;
-  background-color: #f4dbeb;
 }
 #dark .header {
   border-bottom: solid 0.25em #f4dbeb;
-  background-color: #2c0130;
+  background: linear-gradient(to bottom, #2c0130, 85%, #f4dbeb85);
 }
 .searchInput {
   border-radius: 20px;
@@ -144,5 +152,34 @@ button {
   position: absolute;
   width: 60%;
   height: 32.5em;
+}
+#light .gradienter {
   background: linear-gradient(to right, #f4dbeb, transparent);
+}
+#dark .gradienter {
+  background: linear-gradient(to right, #2c0130, transparent);
+}
+.individualBoxFooter {
+  display: flex;
+  align-items: center;
+}
+.textBoxFooter {
+  margin-right: 0.5em;
+}
+.atext {
+  font-family: Croissant One;
+}
+#light .atext {
+  color:#2c0130;
+  opacity: 100%;
+}
+#dark .atext {
+  color:#f4dbeb;
+  opacity: 100%;
+}
+#light .atext:hover {
+  opacity: 60%;
+}
+#dark .atext:hover {
+  opacity: 60%;
 }

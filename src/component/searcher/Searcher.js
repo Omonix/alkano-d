@@ -7,7 +7,7 @@ const Searcher = () => {
     setSearcher(event.target.value);
   };
   return (
-    <div className="Searcher">
+    <div className="searcher">
       <input
         type="text"
         className="searchInput"
