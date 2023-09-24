@@ -102,10 +102,10 @@ button {
   z-index: 1;
 }
 #light .textPresent {
-  box-shadow: 75px 0 100px 120px #f4dbeb;
+  box-shadow: 5em 0 5em 7em #f4dbeb;
 }
 #dark .textPresent {
-  box-shadow: 75px 0 100px 120px #2c0130;
+  box-shadow: 5em 0 5em 7em #2c0130;
 }
 .imgParentPresent {
   width: 60%;
@@ -122,10 +122,27 @@ button {
 #light .present {
   display: flex;
   align-items: center;
-  border-bottom: solid 0.25em #2c0130;
 }
 #dark .present {
   display: flex;
   align-items: center;
-  border-bottom: solid 0.25em #f4dbeb;
+}
+.footing {
+  display: flex;
+  z-index: 2;
+}
+#light .footing {
+  background-color: #f4dbeb;
+  border-top: solid 0.25em #2c0130;
+}
+#dark .footing {
+  background-color: #2c0130;
+  border-top: solid 0.25em #f4dbeb;
+}
+.imgLogoGit {
+  width: 3em;
+  border-radius: 20em;
+}
+.entryMain {
+  z-index: 0;
 }
