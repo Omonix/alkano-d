@@ -15,6 +15,7 @@ const EntryMain = () => {
           </p>
         </div>
         <div className="imgParentPresent">
+          <div className="gradienter"></div>
           <img className="imgPresent" src={imgPresent} alt="img" />
         </div>
       </div>

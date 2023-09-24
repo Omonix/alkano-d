@@ -101,12 +101,6 @@ button {
   height: 30em;
   z-index: 1;
 }
-#light .textPresent {
-  box-shadow: 5em 0 5em 7em #f4dbeb;
-}
-#dark .textPresent {
-  box-shadow: 5em 0 5em 7em #2c0130;
-}
 .imgParentPresent {
   width: 60%;
   height: 100%;
@@ -145,4 +139,10 @@ button {
 }
 .entryMain {
   z-index: 0;
+}
+.gradienter {
+  position: absolute;
+  width: 60%;
+  height: 32.5em;
+  background: linear-gradient(to right, #f4dbeb, transparent);
 }
