@@ -1,0 +1,131 @@
+/*#2c0130 #f4dbeb*/
+
+* {
+  font-family: Croissant One;
+  transition-duration: 600ms;
+}
+body {
+  background-color: blue;
+}
+button {
+  border-radius: 20px;
+  margin: 0 0 0 1em;
+  font-size: 1em;
+}
+#light button {
+  color: #2c0130;
+  background-color: #f4dbeb;
+  border: solid 0.2em #2c0130;
+}
+#light button:hover {
+  color: #f4dbeb;
+  background-color: #2c0130;
+}
+#dark button {
+  color: #f4dbeb;
+  background-color: #2c0130;
+  border: solid 0.2em #f4dbeb;
+}
+#dark button:hover {
+  color: #2c0130;
+  background-color: #f4dbeb;
+}
+#light {
+  color:black;
+  background-color: #f4dbeb;
+}
+#dark {
+  color: white;
+  background-color: #2c0130;
+}
+.logo {
+  height: 10em;
+}
+.switch {
+  display: flex;
+  align-items: center;
+  margin: 0 2em;
+}
+.labelMode {
+  margin: 0 0.5em;
+}
+.text {
+  font-family: Croissant One;
+}
+#light .text {
+  color: #2c0130;
+}
+#dark .text {
+  color: #f4dbeb;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+#light .header {
+  border-bottom: solid 0.25em #2c0130;
+  background-color: #f4dbeb;
+}
+#dark .header {
+  border-bottom: solid 0.25em #f4dbeb;
+  background-color: #2c0130;
+}
+.searchInput {
+  border-radius: 20px;
+  padding: 0.15em 0 0.15em 0.5em;
+}
+#light .searchInput {
+  color:#2c0130;
+  border: solid 0.25em #2c0130;
+  background-color: #f4dbeb;
+}
+#light .searchInput:focus {
+  background-color: #2c0130;
+  color: #f4dbeb;
+}
+#dark .searchInput {
+  color:#f4dbeb;
+  border: solid 0.25em #f4dbeb;
+  background-color: #2c0130;
+}
+#dark .searchInput:focus {
+  background-color: #f4dbeb;
+  color: #2c0130;
+}
+.textPresent {
+  width: 40%;
+  height: 30em;
+  z-index: 1;
+}
+#light .textPresent {
+  box-shadow: 75px 0 100px 120px #f4dbeb;
+}
+#dark .textPresent {
+  box-shadow: 75px 0 100px 120px #2c0130;
+}
+.imgParentPresent {
+  width: 60%;
+  height: 100%;
+  z-index: 0;
+}
+.imgPresent {
+  width: 100%;
+}
+.present {
+  position: static;
+  z-index: 2;
+}
+#light .present {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 0.25em #2c0130;
+}
+#dark .present {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 0.25em #f4dbeb;
+}
