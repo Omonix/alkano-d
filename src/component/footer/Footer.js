@@ -14,8 +14,8 @@ const Footer = () => {
           rel="noreferrer"
         >
           Louis Blonde
-          <img className="imgLogoGit" src={gitLogo} alt="gitLogoImage" />
         </a>
+        <img className="imgLogoGit" src={gitLogo} alt="gitLogoImage" />
       </div>
     </div>
   );

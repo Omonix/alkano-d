@@ -1,6 +1,7 @@
-import imgPresent from "../../img/downloadMain.jpg";
+import imgPresentLight from "../../img/downloadImgLight.png";
+import imgPresentDark from "../../img/downloadImgDark.png";
 
-const EntryMain = () => {
+const EntryMain = ({ thimer }) => {
   return (
     <div className="entryMain">
       <div className="present">
@@ -16,7 +17,11 @@ const EntryMain = () => {
         </div>
         <div className="imgParentPresent">
           <div className="gradienter"></div>
-          <img className="imgPresent" src={imgPresent} alt="img" />
+          <img
+            className="imgPresent"
+            src={thimer === "light" ? imgPresentLight : imgPresentDark}
+            alt="img"
+          />
         </div>
       </div>
     </div>

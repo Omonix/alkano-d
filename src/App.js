@@ -27,7 +27,7 @@ const App = () => {
           </div>
         </div>
         <div className="mainParent">
-          <Main />
+          <Main option={theme} />
         </div>
         <Footer />
       </div>
