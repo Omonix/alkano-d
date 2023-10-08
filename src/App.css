@@ -133,6 +133,8 @@ button {
 }
 .footing {
   display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 #light .footing {
@@ -166,7 +168,7 @@ button {
   align-items: center;
 }
 .textBoxFooter {
-  margin-right: 0.5em;
+  margin-right: 0.25em;
 }
 .atext {
   font-family: Croissant One;
