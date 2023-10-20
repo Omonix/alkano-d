@@ -1,36 +1,33 @@
-import imgPresentLight from "../../img/downloadImgLight.png";
-import imgPresentDark from "../../img/downloadImgDark.png";
-import { useState } from "react";
+import downloadImg from "../../img/downloadImg.png";
+import torrentPack from "../../torrentPack.json";
 
-const Main = ({ option }) => {
-  const [valuer, setValuer] = useState(imgPresentLight);
-  const toogleValuer = () => {
-    if (option === "light") {
-      setValuer(imgPresentLight);
-    } else {
-      setValuer(imgPresentDark);
-    }
-  };
+const Main = () => {
   return (
-    <div className="main" onChange={toogleValuer}>
+    <div className="main">
       <div className="entryMain">
         <div className="present">
           <div className="textPresent text">
-            <p className="text">Sommaire</p>
+            <p className="coming text">Welcome !</p>
             <p className="text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-              corrupti tempora numquam ratione, ab aspernatur illo ad laborum
-              impedit architecto. Voluptate ad vero unde corporis magnam,
-              asperiores fuga autem quia deserunt inventore at dignissimos quos
-              dolore ex nisi minima impedit neque sapiente veniam itaque
-              suscipit?
+              {
+                "You are on the good site for download all films !\nThis is not legal but it's just a test and this web site don't have API server."
+              }
             </p>
           </div>
           <div className="imgParentPresent">
             <div className="gradienter"></div>
-            <img className="imgPresent" src={valuer} alt="img" />
+            <img className="imgPresent" src={downloadImg} alt="img" />
           </div>
         </div>
+      </div>
+      <div className="text filmsTable">
+        {torrentPack.map((element, index) => {
+          return (
+            <div className="individualFilm" key={index}>
+              {element.name}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
