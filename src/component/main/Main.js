@@ -1,5 +1,6 @@
 import downloadImg from "../../img/downloadImg.png";
 import torrentPack from "../../torrentPack.json";
+import defaultImgFilm from "../../img/filmWithoutImg.png";
 
 const Main = () => {
   return (
@@ -24,7 +25,15 @@ const Main = () => {
         {torrentPack.map((element, index) => {
           return (
             <div className="individualFilm" key={index}>
-              {element.name}
+              <div className="textNameFilm">{element.name}</div>
+              <div className="imgIndividualFilm">
+                <img
+                  className="imgFilm"
+                  src={defaultImgFilm}
+                  alt="individualImg"
+                />
+              </div>
+              <div>{element.wanTo}</div>
             </div>
           );
         })}
