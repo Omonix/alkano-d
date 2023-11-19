@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import gitLogo from "../../img/gitLogo.png";
-import imgInsta from "../../img/imgInsta.png";
+import gitLogo from "../../folder/img/gitLogo.png";
+import imgInsta from "../../folder/img/imgInsta.png";
 
 const Footer = () => {
   const [lookAtMe, setLookAtMe] = useState(false);

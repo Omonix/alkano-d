@@ -1,6 +1,6 @@
-import downloadImg from "../../img/downloadImg.png";
+import downloadImg from "../../folder/img/downloadImg.png";
 import torrentPack from "../../torrentPack.json";
-import defaultImgFilm from "../../img/filmWithoutImg.png";
+import defaultImgFilm from "../../folder/img/filmWithoutImg.png";
 
 const Main = () => {
   return (
@@ -33,7 +33,7 @@ const Main = () => {
                   alt="individualImg"
                 />
               </div>
-              <div>{element.wanTo}</div>
+              <div className="wantTo">{element.wanTo}</div>
             </div>
           );
         })}

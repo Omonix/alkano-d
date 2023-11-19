@@ -228,22 +228,23 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 3.5em;
 }
 .individualFilm {
   border: solid;
   border-radius: 20px;
   width: 25em;
-  margin: 0.75em;
+  margin: 1em 0;
   padding: 0.5em;
   border-width: 0.15em;
 }
 #light .individualFilm {
   border-color: #2c0130;
-  box-shadow: -1em 0 .4em #2c013085;
+  box-shadow: -1em 0 1em #2c013085;
 }
 #dark .individualFilm {
   border-color: #f4dbeb;
-  box-shadow: -1em 0 .4em #f4dbeb85;
+  box-shadow: -1em 0 1em #f4dbeb85;
 }
 .imgIndividualFilm {
   margin-top: 2em;
@@ -265,7 +266,14 @@ button {
 }
 .textNameFilm {
   font-size: x-large;
+  margin: 0.4em 0 0 0.32em;
 }
 #dark .textNameFilm {
   color: #f4dbeb;
+}
+.wantTo {
+  text-align: center;
+  margin: 0 1em;
+  line-height: 2em;
+  font-size: large;
 }
