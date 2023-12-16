@@ -33,7 +33,9 @@ const Main = () => {
                   alt="individualImg"
                 />
               </div>
-              <div className="wantTo">{element.wanTo}</div>
+              <div className="wantTo">
+                <p className="overflower">{element.wanTo}</p>
+              </div>
             </div>
           );
         })}

@@ -277,3 +277,7 @@ button {
   line-height: 2em;
   font-size: large;
 }
+.overflower {
+  max-width: 10em;
+  text-overflow: ellipsis;
+}
