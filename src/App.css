@@ -278,6 +278,5 @@ button {
   font-size: large;
 }
 .overflower {
-  max-width: 10em;
   text-overflow: ellipsis;
 }
